@@ -1,1 +1,6 @@
 # Lab 8 - Starter
+### Name: Andrew Man
+1. I would fit automated tests within a Github action that runs whenever code is pushed. Automated testing saves time by being repeatedly used after creation. Manually running tests is error prone and running  after all development could lead to sudden high volume of bugs which is hard to pinpoint it source.
+2. No, I would not use an end to end test to check if a single function is returning the correct output. That would be more suited for unit testing.
+3. No, I would Not use an unit test to test the “message” feature of a messaging application. I would use e2e testing to ensure the end user recieves the correct message implying the many smaller functions is likely okay working together. To get close to this with unit tests would require writing alot of tests to check the writing functionality, ensuring the data persists, ensuring only the correct user recieves the message. etc. when what we care about is that the overall feature works.
+4.  Yes, I would use a unit test to test the “max message length” feature of a messaging application. The limitation/(expected cap) of 80 chars max is easily comparable with the user input and therefore well-suited to unit testing.
